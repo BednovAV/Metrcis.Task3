@@ -1,0 +1,17 @@
+// read a
+int a = Console.ReadLine() ;
+// read b
+int b = Console.ReadLine() ;
+string c ;
+// go from 0 to 9
+for(int i = 0 ; i < 10 ; i++)
+if (a < b ) { // if a less then b
+c = "ARTUR" ;
+}
+elif (a > b) {
+c = "MORGANA" ;
+else  {// if a equals b
+c = "MERLIN" ;
+}
+}
+return c ;
