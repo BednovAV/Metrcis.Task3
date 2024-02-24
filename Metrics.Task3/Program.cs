@@ -15,6 +15,6 @@ var levelOfCodeCommentability = commentRowsCount / (double)totalLines;
 Console.WriteLine($"Уровень комментируемости кода - {levelOfCodeCommentability}");
 partial class RegexHelper
 {
-    [GeneratedRegex("(((for)|(if)|(elif))\\s+\\(.+\\))|(\\S.+;)|(else)")]
+    [GeneratedRegex(@"(((for)|(if)|(elif))\s+\(.+\))|(\S.+;)|(else)")]
     public static partial Regex LogicalOperatorsRegex();
 }
