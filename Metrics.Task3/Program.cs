@@ -11,8 +11,8 @@ Console.WriteLine($"Число логических строк - {logicalLines}"
 var commentRowsCount = codeLines.Count(line => line.Contains("//"));
 Console.WriteLine($"Число строк коментариев - {commentRowsCount}");
 
-var levelOfCodeCommentability = commentRowsCount / (double)totalLines * 100;
-Console.WriteLine($"Уровень комментируемости кода - {levelOfCodeCommentability}%");
+var levelOfCodeCommentability = commentRowsCount / (double)totalLines;
+Console.WriteLine($"Уровень комментируемости кода - {levelOfCodeCommentability}");
 partial class RegexHelper
 {
     [GeneratedRegex("(((for)|(if)|(elif))\\s+\\(.+\\))|(\\S.+;)|(else)")]
